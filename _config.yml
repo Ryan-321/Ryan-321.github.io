@@ -2,7 +2,7 @@
 title: J. Ryan Kahle
 email: jryankahle@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Please blog responsibly.
+
 
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://Ryan-321.github.io/" # the base hostname & protocol for your site
