@@ -5,7 +5,7 @@ permalink: /resume/
 ---
 ### Objective
 
-To take a well-travelled career path and my adaptability to the technology sector.  I love learning, putting things together and breaking down problems.  I want to take this passion to team projects and work in a thriving industry where the future is open ended.
+Strong ability to prioritize and manage time on projects and follow a natural workflow with a methodical and systematic approach. Collaborative and adaptable in an effort to maintain an agile process while embracing the changes in technology and the opinions of others. Passionate about writing scalable and well-though out code with an emphasis on user experience and front-end technologies to meet and exceed goals.
 
 ---------------------------
 
@@ -16,7 +16,7 @@ JavaScript, Jquery, HTML5, CSS3, Ruby, Rails, Git, Bootstrap, Sinatra, Express, 
 
 ### Development Experience
 
-#### General Assembly 					                                        June 2015-September 2015
+#### General Assembly 					                         June 2015-September 2015
 _Student, Web Development Immersive_
 
 [Concentration](http://ryan-321.github.io/Memory/) - Individual Project - [Code](https://github.com/Ryan-321/Memory)
@@ -30,11 +30,6 @@ Used Ruby on Rails to create a app where I set up my own user authentication to 
 [Trip.Me](https://trip-me.herokuapp.com/) - Collaborative Project - [Code](https://github.com/alexbannon/trip.me)
 
 Worked in a group setting with a UX Designer. Focused on the front-end of the design collaborating with teammates using an agile approach, adapting our app from feedback as the project moved forward.
-
-#### George Mason University                                                                                                         April 2014 - July 2014
-_Student, Web Design and Development_
-
-Part-time course where I got introduced to Web Development and decided I wanted to make this my career.
 
 ------------------------------
 
@@ -65,4 +60,8 @@ Monitored and adapted to new industry regulations with immediate application for
 ------------------------------
 
 ### Education
+General Assembly, Web Development Immersive, 2015
+
+George Mason University Web Design and Development, 2014
+
 Virginia Wesleyan College, Norfolk, VA Graduate May 2003,   B. A. Business-Marketing
