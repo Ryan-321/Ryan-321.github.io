@@ -142,22 +142,6 @@ div.project-pic{
   width: inherit;
   height: inherit;
 }
-div.memory{
-  background: url("../images/memory.png");
-  background-size: cover;
-}
-div.recipe{
-  background: url("../images/recipeB.png");
-  background-size: cover;
-}
-div.trip{
-  background: url("../images/trip.png");
-  background-size: cover;
-}
-div.avengers{
-  background: url("../images/avengers.png");
-  background-size: cover;
-}
 div.project h3{
   font-size: 1.5em;
   margin: 0;
