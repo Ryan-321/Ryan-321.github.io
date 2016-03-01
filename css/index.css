@@ -103,9 +103,6 @@ div.about-main-left ul{
   color: rgba(130,130,130,.7);
   text-transform: uppercase;;
 }
-div.about-main-right p{
-  font-family: Garamond, Palatino serif;
-}
 div.about-main-left{
   width: 30%;
 }
@@ -118,4 +115,54 @@ div.about-main-right,
 div.about-main-left{
   display: inline-block;
   margin: 0 auto;
+}
+/***********************************************
+
+                    PORTFOLIO
+
+*************************************************/
+section.section-about{
+  width: 70%;
+  margin: 3em auto;
+  text-align: center;
+}
+div.about-row{
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  margin: 1em 0;
+}
+div.project{
+  margin: 1em;
+  display: inline-block;
+  height: 200px;
+  flex: 1;
+}
+div.project-pic{
+  width: inherit;
+  height: inherit;
+}
+div.memory{
+  background: url("../images/memory.png");
+  background-size: cover;
+}
+div.recipe{
+  background: url("../images/recipeB.png");
+  background-size: cover;
+}
+div.trip{
+  background: url("../images/trip.png");
+  background-size: cover;
+}
+div.avengers{
+  background: url("../images/avengers.png");
+  background-size: cover;
+}
+div.project h3{
+  font-size: 1.5em;
+  margin: 0;
+  display: inline-block;
+}
+div.project p{
+  display: inline-block;
 }
