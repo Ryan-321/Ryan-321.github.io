@@ -5,7 +5,7 @@
     // border-top: 5px solid $grey-color-dark;
     // border-bottom: 1px solid $grey-color-light;
     min-height: 70px;
-    background-color: rgba(0,0,0,.1);
+    background-color: $grey-color-light;
     // Positioning context for the mobile navigation icon
     position: relative;
 }
@@ -94,8 +94,12 @@
 .site-footer {
     // border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
+    background-color: rgba(130,130,130,.5);
+    color: #fff;
 }
-
+.site-footer a{
+  color: #fff;
+}
 .footer-heading {
     font-size: 18px;
     margin-bottom: $spacing-unit / 2;
