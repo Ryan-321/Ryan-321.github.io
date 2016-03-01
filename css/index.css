@@ -1,0 +1,84 @@
+/***********************************************
+
+                    HOMEPAGE
+
+*************************************************/
+
+div.section-main{
+  width: 100%;
+  height: 500px;
+  background-color: $grey-color-light;
+  background-image: url('../images/wCloud.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+div.section-main-layer{
+  background-color: rgba(0,0,0,.1);
+  width: inherit;
+  height:inherit;
+}
+div.section-action{
+  width: 100%;
+  height: 200px;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+  -webkit-user-select: center;
+  -moz-user-select: center;
+  -ms-user-select: center;
+  -o-user-select: center;
+  user-select: center;
+  margin: 0;
+}
+div.section-action-child-left,
+div.section-action-child-right{
+  width: 40%;
+  height: 6em;
+  background-color: rgba(0,0,0,.2);
+  margin: 0 auto;
+  text-align: center;
+}
+div.section-action a{
+  display: inline-block;;
+  margin-top: 1em;
+  font-size: 24px;
+}
+
+div.section-meet{
+  width: 100%;
+  height: 500px;
+  background-image: url('../images/cpu.jpg');
+  background-size: 15em 15em;
+  margin: 0;
+  text-align: center;
+}
+div.section-meet-layer{
+  overflow: auto;
+  width: inherit;
+  height: inherit;
+  background-color: rgba(101,190,180,.9);
+}
+div.section-meet p{
+  font-size: 2em;
+  color: #fff;
+  margin: 3em auto 1em;
+  width: 70%;
+}
+div.section-meet a{
+  font-size: 1.5em;
+}
+
+
+/***********************************************
+
+                    ABOUT
+
+*************************************************/
+div.about-header{
+  
+}
+div.clark-kent img{
+  display: block;
+  margin: 0 auto;
+}
