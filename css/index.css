@@ -85,9 +85,14 @@ div.about-header h2{
   font-size: 2em;
   font-weight: 300;
 }
+div.clark-kent{
+  width: 20em;
+  height: 20em;
+  margin: 3em auto;
+}
 div.clark-kent img{
-  display: block;
-  margin: 2em auto 1em;
+  max-width: 100%;
+  height: inherit;
 }
 h3.clark-kent{
   font-size: 2em;
