@@ -130,23 +130,38 @@ div.about-row{
   display: flex;
   align-items: flex-start;
   width: 100%;
-  margin: 1em 0;
 }
 div.project{
   margin: 1em;
   display: inline-block;
-  height: 200px;
   flex: 1;
+  position: relative;
 }
-div.project-pic{
-  width: inherit;
-  height: inherit;
+h3{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  font-size: 2em;
+  display: none;
 }
-div.project h3{
-  font-size: 1.5em;
-  margin: 0;
-  display: inline-block;
+div.project a img:hover{
+  opacity: .6;
+
 }
-div.project p{
-  display: inline-block;
+/***********************************************
+
+                    MEDIA QUERIRES
+
+*************************************************/
+/*@media (max-width: 900px){
+  div.project: .5em 0;
+}*/
+@media (max-width: 800px){
+  div.about-row{
+    flex-direction: column;
+  }
+  div.project{
+    margin: 2em auto;
+  }
 }
