@@ -14,7 +14,7 @@ div.section-main{
   background-size: contain;
 }
 div.section-main-layer{
-  background-color: rgba(101,190,180,.9);
+  background-color: rgba(101,190,180,.6);
   width: inherit;
   height:inherit;
 }
@@ -91,7 +91,7 @@ div.clark-kent img{
 }
 h3.clark-kent{
   font-size: 2em;
-  padding-left: 2em;
+  text-align: center;
 }
 div.about-main{
   width:100%;

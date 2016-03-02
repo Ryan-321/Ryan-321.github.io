@@ -18,34 +18,53 @@ h3{
   font-size: 1em;
   font-family: Helvetica, Arial, sans-serif;
 }
+div.resume-wrapper h3{
+  text-decoration: underline;
+}
 div.resume-wrapper ul{
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-li.li-skills{
+
+/*************   SKILLS  *****************/
+
+div.skills ul li:first-of-type{
+  margin-top: 0;
+}
+li.skills-li{
   position: relative;
   margin: 2.5em 0;
 }
-li.li-skills aside{
+li.skills-li aside{
   position: absolute;
   top: 0;
   right: 0;
-  width: 70%;
+  width: 55%;
 }
-li.work-exp-li{
+
+/***************  WORK ***************/
+
+li.work-exp-li,
+li.education-li{
   margin: 1em 0;
 }
-li.work-exp-li p:first-of-type{
+li.work-exp-li p.title{
   font-size: .8em;
-  font-weight: 700;
+  font-weight: 600;
   font-family: Helvetica, Arial, sans-serif;
+  margin-bottom: .75em;
 }
+
 li.work-exp-li > p,
-li.work-exp-li > h3{
+li.work-exp-li > h3,
+ li.education-li > h3{
   font-size: 1em;
   margin: 0;
 }
+
+/************************************/
+
 div.objective,
 div.skills,
 div.experience,
@@ -54,4 +73,33 @@ div.web-experience,
 div.work-experience
 {
   border-bottom: 1px solid black;
+}
+/***********************************************
+
+                    MEDIA QUERIES
+
+*************************************************/
+@media (max-width: 1200px){
+  li.skills-li{
+    margin: 3em 0;
+  }
+}
+@media (min-width: 700px){
+  div.work-experience ul.prmi-ul p{
+    margin: .25em 0;
+  }
+}
+
+@media (max-width: 960px){
+  div.skills{
+    text-align: center;
+  }
+  li.skills-li,
+  li.skills-li aside{
+    position: static;
+    width: 100%;
+  }
+  li.skills-li{
+    margin: .5em 0;
+  }
 }
