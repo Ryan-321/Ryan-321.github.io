@@ -3,10 +3,9 @@
                     HOMEPAGE
 
 *************************************************/
-
 div.section-main{
+  background-color: rgba(101,190,180,.6);
   width: 100%;
-  min-height: 400px;
   text-align: center;
 }
 div.section-main img{
@@ -18,9 +17,13 @@ div.section-main img{
   padding-bottom: 2.5em;
 }
 div.section-main-layer{
-  background-color: rgba(101,190,180,.6);
   width: inherit;
   height:inherit;
+}
+div.section-main-layer a{
+  padding-bottom: 2em;
+  font-size: 1.5em;
+  display: block;
 }
 /********************ACTION********************/
 div.section-action{
@@ -70,10 +73,6 @@ div.section-meet p{
   color: #fff;
   margin: 1em auto;
   width: 70%;
-}
-div.section-meet a{
-  padding-bottom: 2em;
-  font-size: 1.5em;
 }
 
 
