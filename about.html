@@ -3,11 +3,12 @@ layout: page
 title: About
 permalink: /about/
 ---
-
-<div class="clark-kent">
-  <img src="../images/clark-kent-mod.png" />
-</div>
-
+<section id="about-pic">
+  <div id="front" class="ryan-kahle">
+  </div>
+  <div id="back" class="clark-kent">
+  </div>
+</section>
 <h3 class="clark-kent">I have been Clark Kent for Halloween five times</h3>
 <div class="about-main">
   <div class="about-main-left">
@@ -26,12 +27,20 @@ permalink: /about/
   </div>
   <div class="about-main-right">
     <p>
-        I got interested in Web Development after looking for a career switch
-        and asking myself what I really wanted.  My answers, I wanted to: learn a craft,
-        build things(!), work with passionate people, give back and be creative.
-        This site contains some of my past projects and experiences with technology.
-        If you would like to get a hold of me, my info is below.
+      I got interested in Web Development after looking for a career switch
+      and asking myself what I really wanted.  My answers: to learn a craft, build things(!), work with passionate people, give back and be creative. This site contains some of my past projects and experiences with technology.  I used Jekyll as the delivery for this site, but wrote all the code myself.
     </p>
-    <p>I finally chose a front room on the third floor, because this brought me nearer to Dejah Thoris, whose apartment was on the second floor of the adjoining building, and it flashed upon me that I could rig up some means of communication whereby she might signal me in case she needed either my services or my protection.</p>
+    <p>
+      I have been trained as a Full-Stack developer and am interested in all the intricacies of programming(expecially JavaScript), but I also have a strong pull towards design.  My mission is to follow my instincts and continue to delve into programming while producing beautiful designs with well thought out code.  If you would like to get a hold of me, my info is below.
+    </p>
   </div>
 </div>
+
+<script>
+  document.getElementById('front').addEventListener("click",function(){
+      document.getElementById('about-pic').className = "flip"
+  })
+  document.getElementById('back').addEventListener("click",function(){
+    document.getElementById('about-pic').className = "";
+  })
+</script>
