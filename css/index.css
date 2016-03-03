@@ -8,10 +8,6 @@ div.section-main{
   width: 100%;
   min-height: 400px;
   text-align: center;
-  /*background-image: url('../images/wCloud.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;*/
 }
 div.section-main img{
   margin-top: 7em;

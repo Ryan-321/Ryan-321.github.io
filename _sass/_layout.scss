@@ -26,6 +26,9 @@
 .site-nav {
     float: right;
     line-height: 100px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    color: $grey-color-dark;
 
     .menu-icon {
         display: none;
