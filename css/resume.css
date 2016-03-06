@@ -91,7 +91,9 @@ div.work-experience
 }
 
 @media (max-width: 960px){
-  div.skills{
+  div.skills,
+  .resume-wrapper h3,
+  p.title{
     text-align: center;
   }
   li.skills-li,

@@ -14,7 +14,7 @@ div.section-main img{
 #tagline{
   color: #fff;
   font-size: 3em;
-  padding-bottom: 2.5em;
+  padding: 0 0 2.5em;
 }
 div.section-main-layer{
   width: inherit;
@@ -213,5 +213,9 @@ div.project a img:hover{
 @media (max-width: 600px){
   h3.clark-kent{
     display: none;
+  }
+  #tagline{
+    font-size: 2em;
+    padding: 0 .5em 2em;
   }
 }
