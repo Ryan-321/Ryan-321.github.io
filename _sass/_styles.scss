@@ -7,9 +7,9 @@ div.section-main{
   background-color: rgba(101,190,180,.6);
   width: 100%;
   text-align: center;
-}
-div.section-main img{
-  margin: 5em 0 3em;
+  img{
+    margin: 5em 0 3em;
+  }
 }
 #tagline{
   color: #fff;
@@ -19,24 +19,33 @@ div.section-main img{
 div.section-main-layer{
   width: inherit;
   height:inherit;
-}
-div.section-main-layer a{
-  padding-bottom: 2em;
-  font-size: 1.5em;
-  display: block;
+  a{
+    padding-bottom: 2em;
+    font-size: 1.5em;
+    display: block;
+  }
 }
 /********************ACTION********************/
 div.section-action{
   width: 100%;
   height: 200px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   -ms-align-items: center;
-  align-items: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-user-select: center;
   -moz-user-select: center;
   -ms-user-select: center;
   -o-user-select: center;
   user-select: center;
+  a{
+    font-size: 3em;
+  }
 }
 div.section-action-child-left,
 div.section-action-child-right{
@@ -46,9 +55,6 @@ div.section-action-child-right{
   margin: 0 auto;
   text-align: center;
 }
-div.section-action a{
-  font-size: 3em;
-}
 /********************MEET********************/
 div.section-meet{
   width: 100%;
@@ -56,26 +62,24 @@ div.section-meet{
   background-size: 15em 15em;
   margin: 0;
   text-align: center;
-}
-div.section-meet-layer a{
-  display: block;
+  img{
+    margin-top: 2em;
+  }
+  p{
+    font-size: 2em;
+    color: #fff;
+    margin: 1em auto;
+    width: 70%;
+  }
 }
 div.section-meet-layer{
   width: inherit;
   height: inherit;
   background-color: rgba(101,190,180,.9);
+  a{
+    display: block;
+  }
 }
-div.section-meet img{
-  margin-top: 2em;
-}
-div.section-meet p{
-  font-size: 2em;
-  color: #fff;
-  margin: 1em auto;
-  width: 70%;
-}
-
-
 /***********************************************
 
                     ABOUT
@@ -85,17 +89,16 @@ div.about-header{
   height: 5em;
   line-height: 5em;
   border-bottom: 1px solid rgba(0,0,0,.1);
-}
-div.about-header h2{
-  padding-left: 2em;
-  font-size: 2em;
-  font-weight: 300;
-}
+  h2{
+    padding-left: 2em;
+    font-size: 2em;
+    font-weight: 300;
 
+  }
+}
 /********************PICTURE********************/
 
 #about-pic{
-  z-index: 99;
   position: relative;
   width: 300px;
   height: 300px;
@@ -103,45 +106,38 @@ div.about-header h2{
   cursor: pointer;
   box-shadow: 0 0 5px #4D392E;
   -webkit-perspective: 800px;
-  -moz-perspective: 800px;
   perspective: 800px;
   transition:-webkit-transform 1s ease-in-out;
-  transition:-moz-transform 1s ease-in-out;
+  -webkit-transition: -webkit-transform 1s ease-in-out;
   transition: transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
   -webkit-perspective-origin: 50% 0%; /*center top, default value - how it will rotate*/
-  -moz-perspective-origin: 50% 0%;
   perspective-origin: 50% 0%;
   -webkit-transform-style: preserve-3d; /*passing along its 3d     perspective to its children*/
-  -moz-transform-style: preserve-3d;
   transform-style: preserve-3d;
-}
-section#about-pic div{
-  position: absolute;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-section#about-pic div.clark-kent{
-  background: url("../images/clark-kent-mod.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  -webkit-transform: rotateY( -180deg );  /* Upends backPiece, so when flips back over, its rightside up */
-  -moz-transform: rotateY( -180deg );
-  transform: rotateY( -180deg );
-}
-section#about-pic div.ryan-kahle{
-  z-index: 100;
-  background-image: url("../images/ryan.jpg");
-  background-size: cover;
+  div{
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  div.clark-kent{
+    background: url("../images/clark-kent-mod.png");
+    background-size: cover;
+    -webkit-transform: rotateY( -180deg );  /* Upends backPiece, so when flips back over, its rightside up */
+    transform: rotateY( -180deg );
+  }
+  div.ryan-kahle{
+    z-index: 100;
+    background-image: url("../images/ryan.jpg");
+    background-size: cover;
+  }
 }
 .flip{
    -webkit-transform: rotateY( 180deg );  /* Flips the about-pic */
-   -moz-transform: rotateY( 180deg );
    transform: rotateY( 180deg );
 }
 
@@ -154,14 +150,14 @@ h3.clark-kent{
 div.about-main{
   width:100%;
 }
-div.about-main-left ul{
-  text-align: right;
-  list-style-type: none;
-  color: rgba(130,130,130,.7);
-  text-transform: uppercase;;
-}
 div.about-main-left{
   width: 35%;
+  ul{
+    text-align: right;
+    list-style-type: none;
+    color: rgba(130,130,130,.7);
+    text-transform: uppercase;
+  }
 }
 div.about-main-right{
   width: 55%;
@@ -184,18 +180,26 @@ section.section-about{
   text-align: center;
 }
 div.about-row{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  align-items: flex-start;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   width: 100%;
 }
 div.project{
   margin: 1em;
   display: inline-block;
-  flex: 1;
-}
-div.project a img:hover{
-  opacity: .6;
-
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  img:hover{
+    opacity: .6;
+  }
 }
 /***********************************************
 
@@ -204,7 +208,11 @@ div.project a img:hover{
 *************************************************/
 @media (max-width: 800px){
   div.about-row{
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   div.project{
     margin: 2em auto;
