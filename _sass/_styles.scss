@@ -3,25 +3,29 @@
                     HOMEPAGE
 
 *************************************************/
+body{
+    @include type-setting(0);
+}
+
 div.section-main{
   background-color: rgba(101,190,180,.6);
   width: 100%;
   text-align: center;
   img{
-    margin: 5em 0 3em;
+    margin: $base-line-height*3 0;
   }
 }
 #tagline{
   color: #fff;
-  font-size: 3em;
-  padding: 0 0 2.5em;
+  @include type-setting(3);
+  padding: 0 0 $base-line-height*4;
 }
 div.section-main-layer{
   width: inherit;
   height:inherit;
   a{
-    padding-bottom: 2em;
-    font-size: 1.5em;
+    padding-bottom: $base-line-height*2;
+  @include type-setting(1);
     display: block;
   }
 }
@@ -44,7 +48,7 @@ div.section-action{
   -o-user-select: center;
   user-select: center;
   a{
-    font-size: 3em;
+  @include type-setting(3);
   }
 }
 div.section-action-child-left,
@@ -66,7 +70,7 @@ div.section-meet{
     margin-top: 2em;
   }
   p{
-    font-size: 2em;
+  @include type-setting(2);
     color: #fff;
     margin: 1em auto;
     width: 70%;
@@ -91,7 +95,7 @@ div.about-header{
   border-bottom: 1px solid rgba(0,0,0,.1);
   h2{
     padding-left: 2em;
-    font-size: 2em;
+  @include type-setting(2);
     font-weight: 300;
 
   }
@@ -144,7 +148,7 @@ div.about-header{
 /********************MAIN********************/
 
 h3.clark-kent{
-  font-size: 2em;
+  @include type-setting(2);
   text-align: center;
 }
 div.about-main{
@@ -223,7 +227,10 @@ div.project{
     display: none;
   }
   #tagline{
-    font-size: 2em;
+  @include type-setting(2);
     padding: 0 .5em 2em;
+  }
+  footer{
+    text-align: center;
   }
 }
