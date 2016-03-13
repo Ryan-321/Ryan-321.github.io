@@ -230,6 +230,14 @@ div.project{
   @include type-setting(2);
     padding: 0 .5em 2em;
   }
+  div.about-main-left{
+    display: none;
+  }
+  div.about-main-right{
+    display: block;
+    width: 90%;
+
+  }
   footer{
     text-align: center;
   }
