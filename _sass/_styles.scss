@@ -8,27 +8,60 @@ body{
 }
 
 div.section-main{
-  background-color: rgba(101,190,180,.6);
   width: 100%;
   text-align: center;
+
   img{
     margin: $base-line-height*3 0;
   }
 }
 #tagline{
-  color: #fff;
-  @include type-setting(3);
-  padding: 0 0 $base-line-height*4;
+  text-align: center;
+  color: #000;
 }
 div.section-main-layer{
-  width: inherit;
-  height:inherit;
-  a{
-    padding-bottom: $base-line-height*2;
-  @include type-setting(1);
-    display: block;
-  }
+  display: flex;
+  min-height: 600px;
+  background:
+      /* top, transparent, faked with gradient */
+  -webkit-linear-gradient(#2e2e2e, rgba(63, 102, 135, 0.63),
+  /* bottom, image */
+  url('../images/alps.jpg'));
+  background:
+      /* top, transparent, faked with gradient */
+  -o-linear-gradient(#2e2e2e, rgba(63, 102, 135, 0.63),
+  /* bottom, image */
+  url('../images/alps.jpg'));
+  background:
+      /* top, transparent, faked with gradient */
+  linear-gradient(#2e2e2e, rgba(63, 102, 135, 0.63)),
+      /* bottom, image */
+  url('../images/alps.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
+div.main-display{
+  width: 70%;
+  margin: 7em auto;
+  color: white;
+  align-self: center;
+}
+div.main-display > h1{
+  font-size: 3em;
+  font-family:sans-serif;
+  line-height: initial;
+}
+div.main-display > h3{
+  font-size: 1.5em;
+}
+a.learn_more{
+  font-size: 1.25em;
+}
+a.learn_more:hover{
+  cursor: pointer;
+  color: slategrey;
+}
+
 /********************ACTION********************/
 div.section-action{
   width: 100%;
@@ -241,4 +274,78 @@ div.project{
   footer{
     text-align: center;
   }
+}
+/***********************************************
+
+                    ANIMATION
+
+*************************************************/
+
+.animate {
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes enter_left {
+  from {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes enter_left {
+  from {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.enter_left {
+  -webkit-animation-name: enter_left;
+  animation-name: enter_left;
+}
+
+@-webkit-keyframes enter_right {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes enter_right {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.enter_right {
+  -webkit-animation-name: enter_right;
+  animation-name: enter_right;
 }
