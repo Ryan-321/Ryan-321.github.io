@@ -208,38 +208,6 @@ div.about-main-left{
 }
 /***********************************************
 
-                    PORTFOLIO
-
-*************************************************/
-section.section-about{
-  width: 70%;
-  margin: 3em auto;
-  text-align: center;
-}
-div.about-row{
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-  -webkit-align-items: flex-start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  width: 100%;
-}
-div.project{
-  margin: 1em;
-  display: inline-block;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  img:hover{
-    opacity: .6;
-  }
-}
-/***********************************************
-
                     MEDIA QUERIRES
 
 *************************************************/

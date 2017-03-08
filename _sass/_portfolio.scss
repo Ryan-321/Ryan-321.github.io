@@ -1,0 +1,77 @@
+/***********************************************
+
+                    PORTFOLIO
+
+*************************************************/
+section.section-about{
+  width: 70%;
+  margin: 3em auto;
+  text-align: center;
+}
+div.about-row{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+}
+div.project{
+  margin: 1em;
+  display: inline-block;
+  // -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+
+}
+
+div.image_wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+div.project_overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0);
+  color: transparent;
+  transition: all .5s;
+  -webkit-transition: all .5s;
+  h3, p {
+    text-align: center;
+    margin: 0 3em 0;
+  }
+  h3 {
+    margin-top: 2em;
+    margin-bottom: 1em;
+    font-size: 1.25em;
+  }
+  p {
+    font-weight: 100;
+  }
+}
+
+div.project_overlay:hover {
+  background-color: rgba(63, 102, 135, 0.8);
+  color: whitesmoke;
+  transition: 1s;
+}
+
+@media only screen and (max-width: 500px) {
+  div.project_overlay {
+    h3 {
+      margin-top: 1em;
+      font-size: 1em;
+    }
+    p {
+      font-size: .75em;
+    }
+  }
+}
