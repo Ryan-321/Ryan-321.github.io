@@ -141,10 +141,6 @@ a.border-center-hover {
   overflow: hidden;
 }
 
-a.border-center-hover:hover {
-  color: rgba(0,0,0,0.2)
-}
-
 a.border-center-hover:before {
   content: "";
   position: absolute;
@@ -153,7 +149,7 @@ a.border-center-hover:before {
   right: 50%;
   bottom: 0;
   background: rgba(0,0,0,0.2);
-  height: 1.5px;
+  height: 2px;
   -webkit-transition-property: left right;
   transition-property: left right;
   -webkit-transition-duration: 0.3s;
