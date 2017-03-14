@@ -72,7 +72,10 @@ h1, h2, h3, h4, h5, h6 {
 a {
     text-decoration: none;
     &:visited {
-        color: rgba(0,0,0,.5);
+      color: slategrey;
+    }
+    &:hover {
+      cursor: pointer;
     }
 }
 /**
