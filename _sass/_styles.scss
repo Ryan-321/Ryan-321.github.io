@@ -15,10 +15,12 @@ div.section-main{
     margin: $base-line-height*3 0;
   }
 }
+
 #tagline{
   text-align: center;
   color: #000;
 }
+
 div.section-main-layer{
   display: -webkit-box;
   display: -ms-flexbox;
@@ -57,42 +59,44 @@ div.section-main-layer{
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
+
 div.main-display{
   width: 70%;
   margin: 7em auto;
   color: #e6e6e6;
+  letter-spacing: 1px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
 }
+
 div.main-display > h1{
   font-size: 3em;
   font-family:sans-serif;
   line-height: initial;
 }
+
 div.main-display > h3{
   font-size: 1.5em;
 }
 
 a.learn_more {
-  color: : rgba(0,0,0,.4);
+  color: rgba(0,0,0,.4);
   margin-top: 1em;
   font-size: 1.5em;
   position: relative;
-  cursor: pointer;
-
   &:hover{
     color: transparent;
   }
 
   &:before {
     position: absolute;
-    left: 100px;
+    left: 15px;
     width: 100%;
     content: "Learn More";
     color: transparent;
-    -webkit-transition: all 1s;
-    transition: all 1s;
+    -webkit-transition: all .75s;
+    transition: all .75s;
   }
 
   &:hover:before {
@@ -102,12 +106,12 @@ a.learn_more {
 
   &:after {
     position: absolute;
-    right: 100px;
+    right: 15px;
     width: 100%;
     content: "Learn More";
     color: transparent;
-    -webkit-transition: all 1s;
-    transition: all 1s;
+    -webkit-transition: all .75s;
+    transition: all .75s;
   }
 
   &:hover:after {
@@ -231,10 +235,12 @@ a.site-title:hover {
 }
 /***********************************************
 
-                    ANIMATION
+                    LANDING ANIMATION
 
 *************************************************/
-
+.main-display span {
+  display: block;
+}
 .animate {
   -webkit-animation-duration: 1.5s;
   animation-duration: 1.5s;
@@ -255,28 +261,15 @@ a.site-title:hover {
   }
 }
 
-@keyframes enter_left {
-  from {
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
-    visibility: visible;
-  }
-
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-
 .enter_left {
   -webkit-animation-name: enter_left;
   animation-name: enter_left;
 }
 
-@-webkit-keyframes enter_right {
+@keyframes enter_bottom {
   from {
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
+    -webkit-transform: translate3d(0, 150%, 0);
+    transform: translate3d(0, 150%, 0);
     visibility: visible;
   }
 
@@ -284,6 +277,11 @@ a.site-title:hover {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
+}
+
+.enter_bottom {
+  -webkit-animation-name: enter_bottom;
+  animation-name: enter_bottom;
 }
 
 @keyframes enter_right {
