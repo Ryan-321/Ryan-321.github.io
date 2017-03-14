@@ -131,7 +131,7 @@ div.section-meet-layer{
 *************************************************/
 
 a.border-center-hover {
-  padding-bottom: 5px;
+  padding-bottom: 9px;
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
@@ -149,7 +149,7 @@ a.border-center-hover:before {
   right: 50%;
   bottom: 0;
   background: rgba(0,0,0,0.2);
-  height: 2px;
+  height: 3px;
   -webkit-transition-property: left right;
   transition-property: left right;
   -webkit-transition-duration: 0.3s;
