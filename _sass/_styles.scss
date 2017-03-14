@@ -41,6 +41,16 @@ div.section-main-layer{
   url('../images/alps.jpg');
   background:
       /* top, transparent, faked with gradient */
+  -webkit-linear-gradient(#2e2e2e, rgba(63, 102, 135, 0.63)),
+      /* bottom, image */
+  url('../images/alps.jpg');
+  background:
+      /* top, transparent, faked with gradient */
+  -webkit-linear-gradient(#2e2e2e, rgba(63, 102, 135, 0.63)),
+      /* bottom, image */
+  url('../images/alps.jpg');
+  background:
+      /* top, transparent, faked with gradient */
   linear-gradient(#2e2e2e, rgba(63, 102, 135, 0.63)),
       /* bottom, image */
   url('../images/alps.jpg');
@@ -50,7 +60,7 @@ div.section-main-layer{
 div.main-display{
   width: 70%;
   margin: 7em auto;
-  color: white;
+  color: #e6e6e6;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -63,13 +73,49 @@ div.main-display > h1{
 div.main-display > h3{
   font-size: 1.5em;
 }
-a.learn_more{
-  font-size: 1.25em;
-}
-a.learn_more:hover{
+
+a.learn_more {
+  margin-top: 1em;
+  font-size: 1.5em;
+  position: relative;
   cursor: pointer;
-  color: slategrey;
+
+  &:hover{
+    color: transparent;
+  }
+
+  &:before {
+    position: absolute;
+    left: 100px;
+    width: 100%;
+    content: "Learn More";
+    color: transparent;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+  }
+
+  &:hover:before {
+    left: 0;
+    color: #ccc;
+  }
+
+  &:after {
+    position: absolute;
+    right: 100px;
+    width: 100%;
+    content: "Learn More";
+    color: transparent;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+  }
+
+  &:hover:after {
+    right: 0;
+    color: #ccc;
+  }
+
 }
+
 
 /********************ACTION********************/
 div.section-action{
@@ -124,53 +170,33 @@ div.section-meet-layer{
     display: block;
   }
 }
+
+
 /***********************************************
 
                     HEADER LINKS
 
 *************************************************/
-
-a.border-center-hover {
-  padding-bottom: 9px;
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-          transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px transparent;
-  position: relative;
-  overflow: hidden;
+a.page-link,
+a.site-title {
+  text-shadow: 0 0 .5px rgba(0,0,0,.1);
+  -webkit-transition: all .3s;
+  transition: all .3s;
 }
 
-a.border-center-hover:before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  left: 50%;
-  right: 50%;
-  bottom: 0;
-  background: rgba(0,0,0,0.2);
-  height: 3px;
-  -webkit-transition-property: left right;
-  transition-property: left right;
-  -webkit-transition-duration: 0.3s;
-          transition-duration: 0.3s;
-  -webkit-transition-timing-function: ease-out;
-          transition-timing-function: ease-out;
+a.page-link:hover,
+a.site-title:hover {
+  color: rgba(255,255,255,0.7);
+  font-weight: 100;
+  letter-spacing: .3px;
 }
-
-a.border-center-hover:hover:before,
-a.border-center-hover:focus:before,
-a.border-center-hover:active:before {
-  left: 0;
-  right: 0;
-}
-
 
 /***********************************************
 
                     MEDIA QUERIRES
 
 *************************************************/
+
 @media (max-width: 800px){
   div.about-row{
     -webkit-box-orient: vertical;
