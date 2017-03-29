@@ -201,7 +201,6 @@ a.site-title:hover {
                     MEDIA QUERIRES
 
 *************************************************/
-
 @media (max-width: 800px){
   div.about-row{
     -webkit-box-orient: vertical;
@@ -214,12 +213,19 @@ a.site-title:hover {
   }
 }
 @media (max-width: 600px){
+  // Mobile Nav
+  // nav.site-nav {
+  //   position: relative;
+  //   width: 15px;
+  //   height: 15px;
+  //   background-color: transparent;
+  //   border-radius: none;
+  // }
   h3.clark-kent{
     display: none;
   }
-  #tagline{
-  @include type-setting(2);
-    padding: 0 .5em 2em;
+  div.section-main-layer {
+    min-height: 500px;
   }
   div.about-main-left{
     display: none;
@@ -227,10 +233,31 @@ a.site-title:hover {
   div.about-main-right{
     display: block;
     width: 90%;
-
+  }
+  div.main-display h1.enter_left {
+    font-size: 2em;
   }
   footer{
     text-align: center;
+  }
+}
+
+@media (max-width: 400px) {
+  div.main-display h1.enter_left {
+    font-size: 1.5em;
+  }
+  div.main-display h3.enter_right {
+    font-size: 1em;
+  }
+  div.main-display a.learn_more,
+  div.main-display a.learn_more::after,
+  div.main-display a.learn_more::before {
+    font-size: 1em;
+  }
+}
+@media (min-width: 1281px) {
+  div.section-main-layer {
+    min-height: 700px;
   }
 }
 /***********************************************
