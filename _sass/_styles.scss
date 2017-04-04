@@ -214,13 +214,15 @@ a.site-title:hover {
 }
 @media (max-width: 600px){
   // Mobile Nav
-  // nav.site-nav {
-  //   position: relative;
-  //   width: 15px;
-  //   height: 15px;
-  //   background-color: transparent;
-  //   border-radius: none;
-  // }
+  nav.site-nav {
+    z-index: 1000;
+  }
+  div.trigger {
+    background-color: rgba(63, 102, 135,.9);
+    box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+    border-radius: 2px;
+    padding-top: 8px;
+  }
   h3.clark-kent{
     display: none;
   }
