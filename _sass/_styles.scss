@@ -7,15 +7,6 @@ body{
     @include type-setting(0);
 }
 
-div.section-main{
-  width: 100%;
-  text-align: center;
-
-  img{
-    margin: $base-line-height*3 0;
-  }
-}
-
 #tagline{
   text-align: center;
   color: #000;
@@ -25,7 +16,8 @@ div.section-main-layer{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-height: 600px;
+  height: 90vh;
+  text-align: center;
   background:
       /* top, transparent, faked with gradient */
   -webkit-linear-gradient(#2e2e2e, rgba(63, 102, 135, 0.63),
